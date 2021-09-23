@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageView" type="id">imageView</item>
+    <item name="textView" type="id">textView</item>
+    <item name="textView2" type="id">textView2</item>
+    <item name="signup_screen" type="id">signup</item>
+    <item name="fullname" type="id">fullname</item>
+    <item name="btnforgot" type="id">forgot</item>
+    <item name="fuel" type="id">Fuel Consumption</item>
+    <item name="proflit" type="id">Price per litre</item>
+    <item name="price" type="id">Price</item>
+    <item name="id_avg_fuel" type="id">avgfuel</item>
+    <item name="avgfuel" type="id">Avg fuel</item>
+    <item name="avgwithineco" type="id">Avgwithineco</item>
+    <item name="id_price" type="id">dprice</item>
+    <item name="showAct" type="id">showActivity</item>
+
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fuelEfficiency">
+
+
+    <EditText
+        android:id="@+id/id_rsperltr"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Rs. per Ltr"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/id_litres"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/id_avg_eco"
+        android:layout_width="122dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toEndOf="@+id/avgwithineco"
+        app:layout_constraintTop_toBottomOf="@+id/id_avg_fuel" />
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="106dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:src="@drawable/back1"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="32"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <ImageView
+        android:layout_width="82dp"
+        android:layout_height="86dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:src="@drawable/save1"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/adamina"
+        android:gravity="center"
+        android:text="Fuel Consumtion"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="107dp" />
+
+    <TextView
+        android:id="@+id/proflit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Price per Litre"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <TextView
+        android:id="@+id/fuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="Fuel Consumption (l)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proflit" />
+
+    <TextView
+        android:id="@+id/km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="Distance (km)"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuel" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="Price"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/km" />
+
+    <TextView
+        android:id="@+id/id_avg_fuel"
+        android:layout_width="122dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toEndOf="@+id/avgfuel"
+        app:layout_constraintTop_toBottomOf="@+id/id_price" />
+
+    <TextView
+        android:id="@+id/avgwithineco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="Avg within economy"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avgfuel" />
+
+    <TextView
+        android:id="@+id/avgfuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="Avg fuel(l/100km)"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+
+    <EditText
+        android:id="@+id/id_litres"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="litres"
+        android:hintTextColor="#78909C"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints,TextContrastCheck"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <EditText
+        android:id="@+id/id_km"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="km"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/id_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_litres"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/id_price"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/rs"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <Button
+        android:id="@+id/id_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textColor="@color/bluegrey600"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="672dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

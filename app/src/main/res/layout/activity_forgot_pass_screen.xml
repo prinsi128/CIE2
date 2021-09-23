@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotPassScreen"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+<ImageView
+    android:id="@+id/logo_image"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@drawable/trucker_logo"
+    android:layout_marginStart="250dp"
+    android:layout_marginTop="20dp"
+    android:transitionName="logo_image"
+    android:contentDescription="TODO"
+    tools:ignore="ContentDescription" />
+
+<TextView
+    android:id="@+id/logo_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:fontFamily="@font/convergence"
+    android:text="@string/forgot_password"
+    android:layout_marginTop="20dp"
+    android:textColor="#42B9C8"
+    android:textSize="28sp"
+    android:transitionName="logo_text"
+    tools:ignore="TextContrastCheck" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="28dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_email"
+        android:hint="@string/enter_email"
+        android:layout_marginTop="20dp"
+        android:transitionName="tran_uname"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/reda100"
+        android:text="@string/send"
+        android:textStyle="bold"
+        android:textColor="@color/bluegrey800"
+        android:textAllCaps="false"
+        android:transitionName="tran_btn" />
+
+</LinearLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="#00000000"
+    android:text="@string/back_to_signin"
+    android:textColor="@color/bluegrey600"
+    android:transitionName="tran_login_signup"
+ />
+
+</LinearLayout>
